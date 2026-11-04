@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fbf6ee" />
+    <meta name="description" content="A small, special birthday story made only for Ammini." />
+    <title>For Ammini, With Love</title>
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <main class="site-shell">
+      <header class="topbar">
+        <div class="seal" aria-label="For Ammini">
+          <span class="seal-letter">A</span>
+          <span class="seal-rule"></span>
+          <span class="seal-caption">for ammini</span>
+        </div>
+        <div class="music-status" id="musicStatus" aria-live="polite">
+          <span class="music-dot"></span>
+          <span id="musicStatusText">a little something is waiting</span>
+        </div>
+      </header>
+
+      <section class="story-stage" aria-live="polite">
+        <div class="chapter-rail" aria-hidden="true">
+          <span class="rail-label">A NOTE</span>
+          <span class="rail-line"><span class="rail-progress" id="railProgress"></span></span>
+          <span class="rail-count" id="railCount">01 / 04</span>
+        </div>
+
+        <div class="story-copy">
+          <article class="chapter is-active" data-chapter="0" aria-labelledby="chapter-one-title">
+            <p class="eyebrow">for the favorite person</p>
+            <h1 id="chapter-one-title">hey<br /><em>favorite person</em></h1>
+            <p class="lede">wanna see something i made special only for you</p>
+            <button class="button button-primary" id="revealButton" type="button">
+              <span>click here</span>
+              <span class="button-arrow" aria-hidden="true">↗</span>
+            </button>
+            <p class="micro-note">turn the volume up, if you can</p>
+          </article>
+
+          <article class="chapter" data-chapter="1" aria-labelledby="chapter-two-title" hidden>
+            <p class="eyebrow">a very important question</p>
+            <h2 id="chapter-two-title">yk what is<br /><em>special about this day</em></h2>
+            <div class="reveal-line" aria-hidden="true"></div>
+            <p class="lede">i have been waiting to say this properly.</p>
+            <button class="button button-outline" data-next type="button">
+              <span>let me show you</span>
+              <span class="button-arrow" aria-hidden="true">↗</span>
+            </button>
+          </article>
+
+          <article class="chapter" data-chapter="2" aria-labelledby="chapter-three-title" hidden>
+            <p class="eyebrow">the big reveal</p>
+            <h2 id="chapter-three-title"><span class="tadaw">tadaw</span><br />it's my favorite<br /><em>persons birthday</em></h2>
+            <p class="lede">and somehow the whole day feels a little brighter because it belongs to you.</p>
+            <button class="button button-outline" data-next type="button">
+              <span>one honest thing</span>
+              <span class="button-arrow" aria-hidden="true">↗</span>
+            </button>
+          </article>
+
+          <article class="chapter" data-chapter="3" aria-labelledby="chapter-four-title" hidden>
+            <p class="eyebrow">before the wish</p>
+            <h2 id="chapter-four-title">i'm sorry<br /><em>about the quiet</em></h2>
+            <p class="apology">somewhere between a misunderstanding and a few quiet minutes, i missed talking to you. i am sorry i couldn't be there the way i wanted to be.</p>
+            <p class="apology-signoff">still here. still cheering for you. always.</p>
+            <button class="button button-primary" data-next type="button">
+              <span>make a wish with me</span>
+              <span class="button-arrow" aria-hidden="true">↗</span>
+            </button>
+          </article>
+
+          <article class="chapter wish-chapter" data-chapter="4" aria-labelledby="chapter-five-title" hidden>
+            <p class="eyebrow">a tiny birthday ritual</p>
+            <h2 id="chapter-five-title">hold this<br /><em>and make a wish</em></h2>
+            <p class="lede">keep holding until the little light comes all the way around.</p>
+            <button class="wish-button" id="wishButton" type="button" aria-describedby="wishHint wishProgressText">
+              <span class="wish-button-inner">
+                <span class="wish-label">hold</span>
+                <span class="wish-subtext">to wish</span>
+              </span>
+            </button>
+            <div class="wish-meta">
+              <span id="wishHint">press and hold</span>
+              <span id="wishProgressText">0%</span>
+            </div>
+            <p class="wish-complete" id="wishComplete" aria-live="polite">wish locked in.<br /><em>happy birthday, ammini.</em></p>
+          </article>
+        </div>
+
+        <div class="cake-frame" aria-label="A strawberry and vanilla birthday cake">
+          <div class="cake-ornament cake-ornament-top" aria-hidden="true">strawberry season</div>
+          <div class="cake-image-wrap">
+            <img src="/manus-storage/async-images/HieL2V6d8CVxGhVRtpkf4A/image-1.webp" alt="A small strawberry and vanilla cake with one candle" />
+            <div class="image-wash" aria-hidden="true"></div>
+          </div>
+          <div class="cake-caption">
+            <span>01</span>
+            <span>made with a lot of feeling</span>
+          </div>
+          <div class="cake-ornament cake-ornament-bottom" aria-hidden="true">for a very special person</div>
+        </div>
+      </section>
+
+      <footer class="footer-note">
+        <span>made only for ammini</span>
+        <span class="footer-line"></span>
+        <span>from someone who cares</span>
+      </footer>
+    </main>
+    <audio id="birthdaySong" src="/song.mp3" preload="auto"></audio>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
